@@ -1,0 +1,22 @@
+{
+  "name": "the-grab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/schweller/the-grab.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/schweller/the-grab/issues"
+  },
+  "homepage": "https://github.com/schweller/the-grab#readme",
+  "dependencies": {
+    "axios": "^0.18.0"
+  }
+}
