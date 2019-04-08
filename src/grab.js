@@ -25,11 +25,19 @@ class TheGrab {
 
   /**
    * Get a summoner by a summoner name
-   * @param {string} summonerName 
+   * @param {string} summonerName Summoner Name 
    */
   getSummoner(summonerName) {
     return this.makeRequest(`/lol/summoner/v4/summoners/by-name/${summonerName}`)
   }
+
+  /**
+   * Get matchlist for games played on a given account ID 
+   * @param {string} id Encrypted account ID 
+   */
+  getMatchList(id) {
+    return this.makeRequest(`/lol/match/v4/matchlists/by-account/${id}`)
+  } 
 
   makeRequest(url) {
     return axios({
