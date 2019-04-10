@@ -19,7 +19,7 @@ class TheGrab {
     this._region = region
   }
 
-  getRegion(region) {
+  getRegion() {
     return this._region
   }
 
@@ -38,6 +38,14 @@ class TheGrab {
   getMatchList(id) {
     return this.makeRequest(`/lol/match/v4/matchlists/by-account/${id}`)
   } 
+
+  /**
+   * Get a match by match ID
+   * @param {string} id match ID
+   */
+  getMatch(id) {
+    return this.makeRequest(`/lol/match/v4/matches/${id}`)
+  }
 
   makeRequest(url) {
     return axios({

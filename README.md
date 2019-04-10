@@ -13,7 +13,7 @@ const TheGrab = require('./grab')
 
 const grab = new TheGrab({
   token: `...`,
-  region: `...` //optional - defaults to "NA"
+  region: `...` //optional - defaults to "br1"
 })
 
 grab
