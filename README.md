@@ -25,7 +25,47 @@ grab
 
 # API
 
-TBD
+## `const grab = new TheGrab(config)`
+
+Creates a new instance of `TheGrab` with the provided configuration
+
+```javascript
+const TheGrab = require('./grab')
+
+const config = {
+  token: `...`, //required parameter
+  region: `...` //optional - defaults to "br1"
+}
+
+const grab = new TheGrab(config)
+
+//or
+
+const grab = new TheGrab({
+  token: `...`, //required parameter
+  region: `...` //optional - defaults to "br1"
+})
+```
+
+## `grab.getSummoner(summonerName)`
+
+Retrieve summoner information by summoner name.
+Returns a promise.
+
+```javascript
+grab.getSummoner(`TheSunda`)
+  .then((response) => {
+    //...
+  })
+  .catch((error) => {
+    //...
+  })
+```
+
+**summonerName**
+
+Summoner Name as a string.
+
 
 # Contributing
 
