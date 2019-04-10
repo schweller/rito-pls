@@ -27,7 +27,7 @@ rito
 
 # API
 
-## `const grab = new Rito(config)`
+## `const rito = new Rito(config)`
 
 Creates a new instance of `Rito` with the provided configuration
 
