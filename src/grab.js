@@ -2,9 +2,22 @@ const axios = require('axios')
 
 class TheGrab {
   constructor(options) {
+    this.validateToken(options.token)
+
     this._token = options.token
-    this._region = options.region || `br1`
+    this._region = options.region || 'br1'
+  
     this.apiRoot = `https://${this._region}.api.riotgames.com`
+  }
+
+  validateToken(token) {
+    if (!token) {
+      throw new Error('Token is required')
+    }
+
+    if (typeof token !== 'string') {
+      throw new TypeError('Token must be a String.')
+    }
   }
 
   setToken() {

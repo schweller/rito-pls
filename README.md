@@ -52,6 +52,10 @@ const grab = new TheGrab({
 Retrieve summoner information by summoner name.
 Returns a promise.
 
+**summonerName**
+
+Summoner Name as a string.
+
 ```javascript
 grab.getSummoner(`TheSunda`)
   .then((response) => {
@@ -61,11 +65,6 @@ grab.getSummoner(`TheSunda`)
     //...
   })
 ```
-
-**summonerName**
-
-Summoner Name as a string.
-
 
 # Contributing
 
