@@ -1,24 +1,24 @@
-# The Grab 
+# Rito pls
 
 ![Build Status](https://travis-ci.org/schweller/the-grab.svg?branch=master)
 
-A Node.JS wrapper for the Riot Games API.
+A JavaScript wrapper for the Riot Games API.
 
 # Installing
 ```
-npm install the-grab
+npm install rito-please
 ```
 
 # Usage 
 ```javascript
-const TheGrab = require('./grab')
+const Rito = require('rito')
 
-const grab = new TheGrab({
+const rito = new Rito({
   token: `...`,
   region: `...` //optional - defaults to "br1"
 })
 
-grab
+rito
   .getSummoner(`TheSunda`)
   .then(({data}) => {
     console.log(data)
@@ -27,29 +27,29 @@ grab
 
 # API
 
-## `const grab = new TheGrab(config)`
+## `const grab = new Rito(config)`
 
-Creates a new instance of `TheGrab` with the provided configuration
+Creates a new instance of `Rito` with the provided configuration
 
 ```javascript
-const TheGrab = require('./grab')
+const Rito = require('rito')
 
 const config = {
   token: `...`, //required parameter
   region: `...` //optional - defaults to "br1"
 }
 
-const grab = new TheGrab(config)
+const rito = new Rito(config)
 
 //or
 
-const grab = new TheGrab({
+const rito = new Rito({
   token: `...`, //required parameter
   region: `...` //optional - defaults to "br1"
 })
 ```
 
-## `grab.getSummoner(summonerName)`
+## `rito.getSummoner(summonerName)`
 
 Retrieve summoner information by summoner name.
 Returns a promise.
@@ -59,7 +59,7 @@ Returns a promise.
 Summoner Name as a string.
 
 ```javascript
-grab.getSummoner(`TheSunda`)
+rito.getSummoner(`TheSunda`)
   .then((response) => {
     //...
   })

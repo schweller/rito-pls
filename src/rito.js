@@ -1,6 +1,6 @@
 const axios = require('axios')
 
-class TheGrab {
+class Rito {
   constructor(options) {
     this.validateToken(options.token)
 
@@ -91,4 +91,4 @@ class TheGrab {
   }
 }
 
-module.exports = TheGrab
+module.exports = Rito
