@@ -16,8 +16,20 @@ const grab = new TheGrab({
 //     return response.data
 //   })
 
-grab.getMatch(`1600784821`)
-  .then((response) => {
+// grab.getMatch(`1600784821`)
+//   .then((response) => {
+//     console.log(response.data)
+//     return response.data
+//   })
+
+// grab.getMatchTimeline(`1600784821`)
+//   .then((response) => {
+//     console.log(response.data)
+//     return response.data
+//   })
+
+grab.getLeagueStatus()
+  .then(response => {
     console.log(response.data)
     return response.data
   })

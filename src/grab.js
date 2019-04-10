@@ -40,11 +40,26 @@ class TheGrab {
   } 
 
   /**
-   * Get a match by match ID
+   * Get match by match ID
    * @param {string} id match ID
    */
   getMatch(id) {
     return this.makeRequest(`/lol/match/v4/matches/${id}`)
+  }
+
+  /**
+   * Get match timeline by match ID
+   * @param {string} id match ID 
+   */
+  getMatchTimeline(id) {
+    return this.makeRequest(`/lol/match/v4/timelines/by-match/${id}`)
+  }
+
+  /**
+   * Get League of Legends servers status for any `this._region`
+   */
+  getLeagueStatus() {
+    return this.makeRequest(`/lol/status/v3/shard-data`)
   }
 
   makeRequest(url) {
