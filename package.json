@@ -1,21 +1,21 @@
 {
-  "name": "the-grab",
-  "version": "1.0.0",
+  "name": "rito-please",
+  "version": "0.1.0",
   "description": "",
-  "main": "build/index.js",
+  "main": "src/rito.js",
   "scripts": {
     "test": "jest --coverage"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/schweller/the-grab.git"
+    "url": "git+https://github.com/schweller/rito-pls.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/schweller/the-grab/issues"
+    "url": "https://github.com/schweller/rito-pls/issues"
   },
-  "homepage": "https://github.com/schweller/the-grab#readme",
+  "homepage": "https://github.com/schweller/rito-pls#readme",
   "dependencies": {
     "axios": "^0.18.0"
   },
