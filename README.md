@@ -1,4 +1,6 @@
-# The Grab
+# The Grab 
+
+![Build Status](https://travis-ci.org/schweller/the-grab.svg?branch=master)
 
 A Node.JS wrapper for the Riot Games API.
 
