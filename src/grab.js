@@ -23,6 +23,10 @@ class TheGrab {
     return this._region
   }
 
+  getAPIRoot() {
+    return `https://${this._region}.api.riotgames.com`
+  }
+
   /**
    * Get a summoner by a summoner name
    * @param {string} summonerName Summoner Name 
@@ -63,9 +67,10 @@ class TheGrab {
   }
 
   makeRequest(url) {
+    const root = this.getAPIRoot()
     return axios({
       method: `get`,
-      url: `${this.apiRoot}${url}`,
+      url: `${root}${url}`,
       headers: {
         "X-Riot-Token": this._token 
       }
