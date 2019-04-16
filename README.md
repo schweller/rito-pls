@@ -74,4 +74,4 @@ TBD
 
 # References
 
-<a name="ritopls">1 -</a> <a href="https://www.urbandictionary.com/define.php?term=Rito">What does **"Rito, please"** means?</a>
+<a name="ritopls">1 -</a> <a target="_blank" href="https://www.urbandictionary.com/define.php?term=Rito">What does **"Rito, please"** means?</a>
