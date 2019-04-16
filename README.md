@@ -1,6 +1,6 @@
 # Rito pls
 
-![Build Status](https://travis-ci.org/schweller/the-grab.svg?branch=master)
+![Build Status](https://travis-ci.org/schweller/rito-pls.svg?branch=master)
 
 A JavaScript wrapper for the Riot Games API.
 
