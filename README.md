@@ -2,7 +2,7 @@
 
 ![Build Status](https://travis-ci.org/schweller/rito-pls.svg?branch=master)
 
-A JavaScript wrapper for the Riot Games API.
+`Rito pls`<sup>[1](#ritopls)</sup> is a simple and JavaScript wrapper for the Riot Games API.
 
 # Installing
 ```
@@ -72,3 +72,6 @@ rito.getSummoner(`TheSunda`)
 
 TBD
 
+# References
+
+<a name="ritopls">1 -</a> <a href="https://www.urbandictionary.com/define.php?term=Rito">What does **"Rito, please"** means?</a>
